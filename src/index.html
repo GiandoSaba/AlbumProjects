@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TailWind Project</title>
+    <link rel="stylesheet" href="/dist/output.css" />
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+  </head>
+  <body class="bg-slate-300 w-100 font-mono w-[100%] h-[100vh] py-[2vh]">
+    <div class="container bg-white rounded-2xl mx-auto h-[96vh] p-10">
+      <div class="text-center w-[80%] mx-auto">
+        <h1 class="text-gray-700 text-4xl uppercase">Album Quiz</h1>
+        <h4 class="text-gray-700 text-2xl mt-4">
+          Indovina l'artista che ha pubblicato più album
+        </h4>
+      </div>
+      <div class="flex items-center justify-center gap-4 my-10">
+        <div class="text-center cursor-pointer rounded-3xl p-2" id="btn_1">
+          <h1 class="text-2xl uppercase py-4" id="name_1"></h1>
+          <span class="text-xl" id="album_1"></span>
+          <div class="text-center mt-3">
+            <img id="img_1" class="rounded-full hover:scale-90" />
+          </div>
+        </div>
+        <div class="text-center cursor-pointer rounded-3xl p-2" id="btn_2">
+          <h1 class="text-2xl uppercase py-4" id="name_2"></h1>
+          <span class="text-xl" id="album_2"></span>
+          <div class="text-center mt-3">
+            <img id="img_2" class="rounded-full hover:scale-90" />
+          </div>
+        </div>
+      </div>
+      <div class="text-center">
+        <button
+          class="px-4 py-2 mb-4 rounded-xl text-xl uppercase"
+          id="continue_btn"
+        ></button>
+        <h3 class="uppercase text-4xl">
+          Punti<span class="block font-black text-red-600" id="points"></span>
+        </h3>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
