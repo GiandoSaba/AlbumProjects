@@ -12,7 +12,7 @@ function getRandomArtists(artists, n) {
 }
 
 async function retrieveArtists(n) {
-  let response = await fetch("./artists.json");
+  let response = await fetch("artists.json");
   let artists = await response.json();
   return getRandomArtists(artists, n);
 }
